@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile and Contact Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Profile and Contact Page</h1>
+        <p class="welcome-message">
+            Welcome to My Profile!
+        </p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+
+            <img
+                src="images/profile.jpeg"
+                alt="my profile and contact page"
+                width="200"
+                height="200"
+            >
+
+            <p>
+                Hello! I am a student learning web development.
+                I enjoy technology, creativity, and building websites.
+            </p>
+
+            <h3>My Interests</h3>
+            <ul>
+                <li>Web development</li>
+                <li>UI/UX design</li>
+                <li>Learning new technologies</li>
+            </ul>
+
+            <h3>My Goals</h3>
+            <ol>
+                <li>Improve my HTML skills.</li>
+                <li>Build accessible websites.</li>
+                <li>Become a skilled web developer.</li>
+            </ol>
+        </article>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="category">Inquiry Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Select a category --</option>
+                        <option value="general">General Question</option>
+                        <option value="school">School Project</option>
+                        <option value="work">Work Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        value="yes"
+                    >
+                    <label for="newsletter">
+                        Subscribe to my newsletter
+                    </label>
+                </p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Profile. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
